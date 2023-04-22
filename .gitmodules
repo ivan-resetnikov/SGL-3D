@@ -1,0 +1,6 @@
+[submodule "OpenGL-dependecie-submodule"]
+	path = OpenGL-dependecie-submodule
+	url = https://github.com/ivan-resetnikov/OpenGL-dependecie-submodule
+[submodule "dep"]
+	path = dep
+	url = https://github.com/ivan-resetnikov/OpenGL-dependecie-submodule
