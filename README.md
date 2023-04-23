@@ -10,7 +10,7 @@ SGL (Simple Graphics Library) is graphics framework for C++. \
 It allows you to easily create 3D games with \
 inredible power and performance of C++!
 
-**Read the [documentation]() to get started**
+**Read the [documentation](https://htmlpreview.github.io/?https://github.com/ivan-resetnikov/SGL-3D-docs/blob/main/index.html) to get started**
 
 <br>
 
