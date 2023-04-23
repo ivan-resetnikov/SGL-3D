@@ -6,7 +6,7 @@ And by doing so you will be credited!
 
 ## 📌 Rules
 
-* Don't use underscores *(Use: wakeLoop, inteard of: wake_loop)* ***(Constants are exception)***
+* Don't use underscores *(Use: parseShader, inteard of: parse_shader)* ***(Constants are exception)***
 * Use same style of syntax as in the project
 * Discuss feature with me before adding it
 * Create your own branch and work with it
