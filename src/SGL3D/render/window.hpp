@@ -57,18 +57,16 @@ void Window::create () {
 		
 		if (mWindow) {
 			glfwMakeContextCurrent(mWindow);
-			glfwSetWindowSizeCallback(mWindow, resize);
-
 			glewInit();
 
 			glViewport(0, 0, mWidth, mHeight);
 		}
 		else {
-			throw "";
+			throw "[SGL3D::RENDER::WINDOW] Failed to create context window";
 		}
 	}
 	else {
-		throw "";
+		throw "[SGL3D::GLFW] Failed to initialize GLFW";
 	}
 }
 
@@ -88,7 +86,6 @@ void Window::update () {
 	glfwPollEvents();
 
 	glfwGetFramebufferSize(mWindow, &mWidth, &mHeight);
-	
 
 	glfwSwapBuffers(mWindow);
 }

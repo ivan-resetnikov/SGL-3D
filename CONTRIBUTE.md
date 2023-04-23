@@ -13,7 +13,25 @@ And by doing so you will be credited!
 
 
 ## 🎯 Goals
-* Create placeholders
+* ~~Create placeholders~~
+  * ~~Window~~
+  * ~~Object~~
+  * Shader
+    * Loader
+* Imlement placeholder functionality
+  * ~~Window~~
+  	* ~~Create window~~
+  	* ~~Is closed~~
+  	* ~~Close~~
+  	* ~~Terminate~~
+  	* ~~Update~~
+  	* ~~Clear~~
+  * Object
+  	* 3D model loader (ASSIMP)
+  	* Renderer
+  * Shader
+    * Loader
+    * Use
 
 
 ## 📬 Contact me
