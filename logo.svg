@@ -1,0 +1,80 @@
+<svg
+   width="200mm"
+   height="110mm"
+   viewBox="0 0 100 50"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.9540684"
+     inkscape:cx="198.20123"
+     inkscape:cy="106.97112"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1022">
+      <stop
+         style="stop-color:#00ff00;stop-opacity:1;"
+         offset="0"
+         id="stop1018" />
+      <stop
+         style="stop-color:#00ff00;stop-opacity:0;"
+         offset="1"
+         id="stop1020" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1022"
+       id="radialGradient1028"
+       cx="5.3926969"
+       cy="2.558017"
+       fx="5.3926969"
+       fy="2.558017"
+       r="2.7509949"
+       gradientTransform="matrix(1,0,0,0.41814595,0,1.4883926)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="layer1"
+     transform="matrix(10.861682,0,0,10.861682,-0.89372421,-3.298933)"
+     style="fill:#0da71f;fill-opacity:1">
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#0da71f;fill-opacity:1;stroke-width:0.264583"
+       x="2.5021756"
+       y="3.6850801"
+       id="text113"><tspan
+         id="tspan111"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Futura Md BT';-inkscape-font-specification:'Futura Md BT';fill:#0da71f;fill-opacity:1;stroke-width:0.264583"
+         x="2.5021756"
+         y="3.6850801">SGL</tspan></text>
+  </g>
+  <path
+     id="path165"
+     style="fill:#0da71f;fill-opacity:1;stroke-width:2.87382"
+     d="m 20.00117,25.463798 c 0,9.480929 12.862696,14.832857 29.414763,16.685675 16.552066,1.852818 35.884631,-2.228859 35.884631,-2.228859 0,0 -0.868152,0.568826 -1.320178,0.844713 -7.996005,4.880218 -21.24025,8.387956 -34.270622,8.387956 -24.100892,0 -45.0868035,-8.164498 -45.0868035,-23.689485 0,-15.5249876 21.3298595,-24.54935804 45.4307515,-24.54935804 13.224744,0 26.27932,3.94419364 34.282019,8.95149724 0.549612,0.3438918 1.774077,1.1415228 1.593576,1.0572328 0,0 -19.95967,-3.6602644 -36.118029,-2.9340674 C 33.62323,8.7166339 20.00117,15.982868 20.00117,25.463798 Z"
+     sodipodi:nodetypes="zzcsszsscsz" />
+</svg>

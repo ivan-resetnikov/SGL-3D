@@ -1,11 +1,8 @@
-# 🏡 SGL 3D 🏡
-
-![What is this framework capable of](https://cdn.cloudflare.steamstatic.com/steam/apps/387990/ss_8f0679852d926688a900222431ab89235986ef5c.600x338.jpg?t=1593703247)
-
-###### look I'm trying to achieve
+<img src="logo.svg">
 
 <br>
 
+div.scrollmenu {background-color: #333; overflow: auto; white-space: nowrap;} div.scrollmenu a {display: inline-block; color: white; text-align: center; padding: 14px; text-decoration: none;} div.scrollmenu a:hover {background-color: #777;}
 
 ## ℹ️ Description
 SGL (Simple Graphics Library) is graphics framework for C++. \
@@ -28,6 +25,12 @@ Then compile using:
 ```bash
 g++ -I./dep/include -L./dep/lib -o bin/main.exe src/game.cpp -lgdi32 -lglfw3dll -lopengl32 -lglew32 -static -static-libgcc -static-libstdc++
 ```
+
+**... Or** if you have python:
+```bash
+python compile.py --release
+```
+
 
 And finally, run "main.exe" in "bin" folder:
 ```bash
