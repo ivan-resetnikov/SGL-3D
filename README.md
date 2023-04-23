@@ -1,8 +1,6 @@
+# 🏡 SGL 3D 🏡
+
 <img src="logo.svg">
-
-<br>
-
-div.scrollmenu {background-color: #333; overflow: auto; white-space: nowrap;} div.scrollmenu a {display: inline-block; color: white; text-align: center; padding: 14px; text-decoration: none;} div.scrollmenu a:hover {background-color: #777;}
 
 ## ℹ️ Description
 SGL (Simple Graphics Library) is graphics framework for C++. \
@@ -26,7 +24,7 @@ Then compile using:
 g++ -I./dep/include -L./dep/lib -o bin/main.exe src/game.cpp -lgdi32 -lglfw3dll -lopengl32 -lglew32 -static -static-libgcc -static-libstdc++
 ```
 
-**... Or** if you have python:
+**... Or** if you have python installed:
 ```bash
 python compile.py --release
 ```
