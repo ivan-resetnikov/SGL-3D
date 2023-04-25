@@ -16,4 +16,4 @@ if len(argv) > 0:
 	if argv[0] == '--release' or argv[0] == '-r' :
 		specialFlags += RELEASE_FLAGS
 
-system('g++' + DEPENDECIE_FLAGS + SOURCE_FLAGS + OPENGL_FLAGS + specialFlags)
+system(f'g++ {DEPENDECIE_FLAGS} {SOURCE_FLAGS} {OPENGL_FLAGS} {specialFlags}')

@@ -1,3 +1,15 @@
+/*
+The MIT License (MIT)
+
+Copyright © 2023 LowRezCat (Ivan Resetnikov)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the “Software”), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+*/
+
 #include <iostream>
 
 #include <GL/glew.h>
@@ -7,7 +19,8 @@
 
 namespace sgl { namespace render {
 
-class Window{
+
+class Window {
 	private:
 		int mWidth, mHeight;
 		const char* mTitle;
@@ -18,7 +31,6 @@ class Window{
 
 	public :
 		Window(int width, int height, const char* title);
-		~Window();
 
 		void close();
 		void terminate();
@@ -40,12 +52,7 @@ Window::Window(int width, int height, const char* title) {
 }
 
 
-Window::~Window() {
-
-}
-
-
-void Window::create () {
+void Window::create() {
 	// init GLFW
 	if (glfwInit()) {
 		// init window
@@ -62,27 +69,27 @@ void Window::create () {
 			glViewport(0, 0, mWidth, mHeight);
 		}
 		else {
-			throw "[SGL3D::RENDER::WINDOW] Failed to create context window";
+			throw "[!] [SGL3D::RENDER::WINDOW] Failed to create context window";
 		}
 	}
 	else {
-		throw "[SGL3D::GLFW] Failed to initialize GLFW";
+		throw "[!] [SGL3D::GLFW] Failed to initialize GLFW";
 	}
 }
 
 
-void Window::close () {
+void Window::close() {
 	glfwSetWindowShouldClose(mWindow, true);
 }
 
 
-void Window::terminate () {
+void Window::terminate() {
 	glfwDestroyWindow(mWindow);
 	glfwTerminate();
 }
 
 
-void Window::update () {
+void Window::update() {
 	glfwPollEvents();
 
 	glfwGetFramebufferSize(mWindow, &mWidth, &mHeight);
@@ -91,12 +98,12 @@ void Window::update () {
 }
 
 
-bool Window::opened () {
+bool Window::opened() {
 	return !glfwWindowShouldClose(mWindow);
 }
 
 
-void Window::clear () {
+void Window::clear() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 

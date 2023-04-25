@@ -17,8 +17,9 @@ And by doing so you will be credited!
   * ~~Window~~
   * ~~Object~~
   * Shader
-    * Loader
-* Imlement placeholder functionality
+    * ~~Loader~~
+    * Fix "mShaderProgramm not declared in current scope" in object.hpp
+* ~~Imlement placeholder functionality~~
   * ~~Window~~
   	* ~~Create window~~
   	* ~~Is closed~~
@@ -29,9 +30,10 @@ And by doing so you will be credited!
   * Object
   	* 3D model loader (ASSIMP)
   	* Renderer
+    * Shader loader
   * Shader
-    * Loader
-    * Use
+    * ~~Loader~~
+    * ~~Use~~
 
 
 ## 📬 Contact me

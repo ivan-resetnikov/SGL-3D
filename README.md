@@ -1,8 +1,7 @@
-# 🏡 SGL 3D 🏡
+# SGL 3D
 
 <img src="logo.svg">
 
-## ℹ️ Description
 SGL (Simple Graphics Library) is graphics framework for C++. \
 It allows you to easily create 3D games with \
 inredible power and performance of C++!
