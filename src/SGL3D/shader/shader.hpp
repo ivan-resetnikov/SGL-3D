@@ -68,7 +68,7 @@ Shader::Shader(std::string vertexShaderPath, std::string fragmentShaderPath)
 	glCompileShader(fragmentShader);
 
 
-	ID = glCreateProgram();
+	ID = glCreateProgram(); // TODO: fix VAO & VBO linking
 
 	glAttachShader(ID, vertexShader);
 	glAttachShader(ID, fragmentShader);

@@ -18,7 +18,7 @@ And by doing so you will be credited!
   * ~~Object~~
   * Shader
     * ~~Loader~~
-    * Fix "mShaderProgramm not declared in current scope" in object.hpp
+    * **FIX:** "mShaderProgramm not declared in current scope" in object.hpp
 * ~~Imlement placeholder functionality~~
   * ~~Window~~
   	* ~~Create window~~
@@ -34,6 +34,7 @@ And by doing so you will be credited!
   * Shader
     * ~~Loader~~
     * ~~Use~~
+    * **FIX:** VAO & VBO linking
 
 
 ## 📬 Contact me
