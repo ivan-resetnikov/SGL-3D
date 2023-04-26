@@ -19,7 +19,7 @@ furnished to do so, subject to the following conditions:
 namespace sgl { namespace shader {
 
 
-std::string defaultVertexShader = "#version 460 core\n"
+const char* defaultVertexShader = "#version 460 core\n"
 	"layout (location = 0) in vec3 aPos;\n"
 	"void main()\n"
 	"{\n"
@@ -27,7 +27,7 @@ std::string defaultVertexShader = "#version 460 core\n"
 	"}\0";
 
 
-std::string defaultFragmentShader = "#version 460 core\n"
+const char* defaultFragmentShader = "#version 460 core\n"
 	"out vec4 FragColor;\n"
 	"void main()\n"
 	"{\n"

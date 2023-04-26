@@ -3,10 +3,10 @@ from sys import argv
 argv = argv[1::]
 
 
-DEPENDECIE_FLAGS = ' -I./dep/include -L./dep/lib'
-SOURCE_FLAGS = ' -o bin/main.exe src/main.cpp'
-OPENGL_FLAGS = ' -lgdi32 -lglfw3dll -lopengl32 -lglew32'
-RELEASE_FLAGS = ' -static -static-libgcc -static-libstdc++'
+DEPENDECIE_FLAGS = '-I./dep/include -L./dep/lib'
+SOURCE_FLAGS = '-o bin/main.exe src/main.cpp'
+OPENGL_FLAGS = '-lgdi32 -lglfw3dll -lopengl32 -lglew32'
+RELEASE_FLAGS = '-static -static-libgcc -static-libstdc++'
 
 
 

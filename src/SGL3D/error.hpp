@@ -1,7 +1,10 @@
-#include <iostream>
+#ifndef ERROR_CALL
+#define ERROR_CALL
 
+#include <stdexcept>
 
 namespace sgl { namespace error {
+
 
 
 void throwError(std::string text) {
@@ -10,3 +13,4 @@ void throwError(std::string text) {
 
 
 }}
+#endif

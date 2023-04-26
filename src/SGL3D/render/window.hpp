@@ -11,13 +11,17 @@ furnished to do so, subject to the following conditions:
 */
 
 #include <iostream>
-
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
+#include "../error.hpp"
 
 
 namespace sgl { namespace render {
+
+
+
+void resizeCallback(GLFWwindow* window, int width, int height);
 
 
 class Window {
@@ -32,14 +36,12 @@ class Window {
 	public :
 		Window(int width, int height, const char* title);
 
-		void close();
-		void terminate();
-
 		bool opened();
 		void update();
-
 		void clear();
-		void resize();
+
+		void close();
+		void terminate();
 };
 
 
@@ -53,9 +55,7 @@ Window::Window(int width, int height, const char* title) {
 
 
 void Window::create() {
-	// init GLFW
 	if (glfwInit()) {
-		// init window
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 4);
 		glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
@@ -67,13 +67,14 @@ void Window::create() {
 			glewInit();
 
 			glViewport(0, 0, mWidth, mHeight);
+			glfwSetFramebufferSizeCallback(mWindow, resizeCallback);
 		}
 		else {
-			throw "[!] [SGL3D::RENDER::WINDOW] Failed to create context window";
+			sgl::error::throwError("[!] [SGL3D::RENDER::WINDOW] Failed to create context window");
 		}
 	}
 	else {
-		throw "[!] [SGL3D::GLFW] Failed to initialize GLFW";
+		sgl::error::throwError("[!] [SGL3D::GLFW] Failed to initialize GLFW");
 	}
 }
 
@@ -104,7 +105,15 @@ bool Window::opened() {
 
 
 void Window::clear() {
+	glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
+
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+}
+
+
+void resizeCallback(GLFWwindow* window, int width, int height)
+{
+	glViewport(0, 0, width, height);
 }
 
 

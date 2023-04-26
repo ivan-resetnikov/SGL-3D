@@ -34,27 +34,27 @@ class Shader {
 
 Shader::Shader(std::string vertexShaderPath, std::string fragmentShaderPath)
 {
-	// if (vertexShaderPath != "default") {
+	// if (vertexShaderPath == "default") {
+	// 	const char* vertexShaderSource = defaultVertexShader;
+		
+	// }
+	// else {
 	// 	std::string vertexShaderCode = sgl::shader::readFile(vertexShaderPath);
-	// }
-	// else {
-	// 	std::string vertexShaderCode = defaultVertexShader;
+
+	// 	const char* vertexShaderSource = vertexShaderCode.c_str();
 	// }
 
 	// if (vertexShaderPath != "default") {
-	// 	std::string fragmentShaderCode = sgl::shader::readFile(fragmentShaderPath);
+	// 	const char* fragmentShaderSource = defaultFragmentShader;
 	// }
 	// else {
-	// 	std::string fragmentShaderCode = defaultFragmentShader;
+	// 	std::string fragmentShaderCode = sgl::shader::readFile(fragmentShaderPath);
+
+	// 	const char* fragmentShaderSource = fragmentShaderCode.c_str();
 	// }
 
-	std::string vertexShaderCode = defaultVertexShader;
-	std::string fragmentShaderCode = defaultFragmentShader;
-
-
-	const char* vertexShaderSource = vertexShaderCode.c_str();
-	const char* fragmentShaderSource = fragmentShaderCode.c_str();
-
+	const char* vertexShaderSource = defaultVertexShader;
+	const char* fragmentShaderSource = defaultFragmentShader;
 
 	unsigned int vertexShader = glCreateShader(GL_VERTEX_SHADER);
 

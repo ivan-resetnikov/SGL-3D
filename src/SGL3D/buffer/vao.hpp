@@ -28,7 +28,7 @@ class VAO {
 		GLuint ID;
 		VAO();
 
-		void LinkVBO(sgl::buffer::VBO& VBO1, GLuint layout);
+		void LinkVBO(sgl::buffer::VBO& VBO, GLuint layout);
 		void Bind();
 		void Unbind();
 		void Delete();
@@ -40,13 +40,13 @@ VAO::VAO() {
 }
 
 
-void VAO::LinkVBO(sgl::buffer::VBO& VBO1, GLuint layout) {
-	VBO1.Bind();
+void VAO::LinkVBO(sgl::buffer::VBO& VBO, GLuint layout) {
+	VBO.Bind();
 
 	glVertexAttribPointer(layout, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
 	glEnableVertexAttribArray(layout);
 
-	VBO1.Unbind();
+	VBO.Unbind();
 }
 
 

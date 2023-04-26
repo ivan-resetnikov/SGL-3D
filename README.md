@@ -13,23 +13,23 @@ inredible power and performance of C++!
 
 ## ⏬ Installation
 
-Clone repo using:
+- Clone repo using:
 ```bash
 git clone https://github.com/ivan-resetnikov/SGL-3D
 ```
 
-Then compile using:
+- Then compile using:
 ```bash
 g++ -I./dep/include -L./dep/lib -o bin/main.exe src/game.cpp -lgdi32 -lglfw3dll -lopengl32 -lglew32 -static -static-libgcc -static-libstdc++
 ```
 
-**... Or** if you have python installed:
+- **... Or** if you have python installed:
 ```bash
 python compile.py --release
 ```
 
 
-And finally, run "main.exe" in "bin" folder:
+- And finally, run "main.exe" in "bin" folder:
 ```bash
 bin/main.exe
 ```

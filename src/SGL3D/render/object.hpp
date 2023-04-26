@@ -20,33 +20,38 @@ furnished to do so, subject to the following conditions:
 
 
 
-namespace sgl { namespace Model3D {
+namespace sgl { namespace object {
 
 
 class Model3D {
 	public:
-		Model3D(float* vertices, float* indices, std::string vertexShaderPath, std::string fragmentShaderPath);
+		Model3D(GLfloat* vertices, GLuint* indices, int sizeOfVertices, int sizeOfIndices, std::string vertexShaderPath, std::string fragmentShaderPath);
 
 		void render(sgl::render::Window);
 		void terminate();
+
+		sgl::shader::Shader mShaderProgram;
+		sgl::buffer::VAO mVAO;
+		sgl::buffer::VBO mVBO;
+		sgl::buffer::EBO mEBO;
+
+		int mVerticesSize, mIndicesSize;
 };
 
 
-Model3D::Model3D(float* vertices, float* indices, std::string vertexShaderPath, std::string fragmentShaderPath) {
-	sgl::shader::Shader mShaderProgram(vertexShaderPath, fragmentShaderPath);
+Model3D::Model3D(GLfloat* vertices, GLuint* indices, int sizeOfVertices, int sizeOfIndices, std::string vertexShaderPath, std::string fragmentShaderPath)
+	: mShaderProgram(vertexShaderPath, fragmentShaderPath), mVBO(vertices, sizeof(vertices)), mEBO(indices, sizeof(indices)) {
 
-	sgl::buffer::VAO mVAO;
 	mVAO.Bind();
-
-	sgl::buffer::VBO mVBO(vertices, sizeof(vertices));
-	// sgl::buffer::EBO mEBO(indices, sizeof(indices));
-
 
 	mVAO.LinkVBO(mVBO, 0);
 
 	mVAO.Unbind();
 	mVBO.Unbind();
-	// mEBO.Unbind();
+	mEBO.Unbind();
+
+	mVerticesSize = sizeOfVertices;
+	mIndicesSize = sizeOfIndices;
 }
 
 
@@ -60,7 +65,7 @@ void Model3D::render(sgl::render::Window) {
 void Model3D::terminate() {
 	mVAO.Delete();
 	mVBO.Delete();
-	// mEBO.Delete();
+	mEBO.Delete();
 	mShaderProgram.Delete();
 }
 
